@@ -78,6 +78,7 @@ def build():
             links.append(f"<li>{content}</li>")
         html = template.substitute(
             name=escape(node["name"]),
+            meta_description=escape(node["description"], quote=True),
             transition_name="node-" + slugify(node["name"]),
             parents="\n".join(node_link(name) for name in node["parents"]) or escape("<no parent pages>"),
             metadata=metadata,
