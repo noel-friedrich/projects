@@ -66,7 +66,7 @@
         body { margin: 0; background: var(--background); font-size: 17px; line-height: 1.55; }
         a, a:visited { color: inherit; text-decoration: none; }
         a:hover { text-decoration: underline; text-underline-offset: .2em; }
-        a:focus-visible { outline: 1px dotted currentColor; outline-offset: 5px; }
+        a:focus-visible, button:focus-visible { outline: 1px dotted currentColor; outline-offset: 5px; }
         .parents a, .children a { background: #fff; }
 
         .parents {
@@ -105,6 +105,7 @@
         .links:empty { display: none; }
         .links a, .links a:visited { color: var(--link); text-decoration: underline; text-underline-offset: .2em; text-decoration-color: var(--line); }
         .links a:hover { text-decoration-color: currentColor; }
+        .random-project { margin: 1.75rem 0 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; text-underline-offset: .2em; cursor: pointer; }
 
         /* Mobile: normal page scrolling, with a loose trail of child links. */
         .children { position: relative; z-index: 1; padding: 0 var(--page-padding) 5rem; }
@@ -145,6 +146,7 @@
             <ul class="links" aria-label="External links"><li><a href="https://github.com/noel-friedrich/flugzeug-spiel" target="_blank" rel="noopener noreferrer">GitHub Page</a></li>
 <li><a href="https://www.youtube.com/watch?v=Szs1dWKWZQQ" target="_blank" rel="noopener noreferrer">YouTube Video</a></li>
 <li><a href="https://www.noel-friedrich.de/flugzeug-spiel/" target="_blank" rel="noopener noreferrer">The Game</a></li></ul>
+            <button class="random-project" type="button" data-projects="[]" hidden>Random Project</button>
         </main>
         <nav class="children" aria-label="Children">
             <ul></ul>
@@ -159,6 +161,14 @@
         const svg = document.querySelector('.connections');
         const desktop = window.matchMedia('(min-width: 1100px)');
         const svgNS = 'http://www.w3.org/2000/svg';
+        const randomProject = document.querySelector('.random-project');
+        const randomPages = JSON.parse(randomProject.dataset.projects);
+        if (randomPages.length) {
+            randomProject.hidden = false;
+            randomProject.addEventListener('click', () => {
+                window.location.assign(randomPages[Math.floor(Math.random() * randomPages.length)]);
+            });
+        }
 
         // Stable disorder: revisiting a page gives you the same arrangement.
         function hash(text) {

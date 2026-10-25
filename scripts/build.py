@@ -83,6 +83,10 @@ def build():
             metadata=metadata,
             description=escape(node["description"]).replace("\n", "<br>\n"),
             links="\n".join(links),
+            random_projects=escape(json.dumps([
+                target.parent.as_posix() + "/"
+                for name, target in pages.items() if name != "Projects"
+            ] if node["name"] == "Projects" else []), quote=True),
             children="\n".join(f"<li>{node_link(name)}</li>" for name in children[node["name"]]),
         )
         destination = ROOT / page
