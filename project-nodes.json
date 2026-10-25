@@ -706,7 +706,7 @@
     {
         "name": "Miniwelt",
         "start-date": "01.07.2026",
-        "parents": ["Programming"],
+        "parents": ["Programming", "Social Media Accounts"],
         "description": "A voxel game which lets you build and easily share 256x256x256 worlds. You can change the scale of the player with a push of the button, which means that things get crazy. It's a pretty complex and cool game made to be used across many devices. It even runs on your phone! It's hosted on Cloudflare and has accounts, moderation and a bunch of fun worlds. Unfortunately, it has no users (though I might make a YouTube video about it some day).",
         "links": [
             {
