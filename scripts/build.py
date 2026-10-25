@@ -83,7 +83,7 @@ def build():
             metadata=metadata,
             description=escape(node["description"]).replace("\n", "<br>\n"),
             links="\n".join(links),
-            children="\n".join(f"<li>{node_link(name)}</li>" for name in children[node["name"]]) or f'<li class="empty">{escape("<no child pages>")}</li>',
+            children="\n".join(f"<li>{node_link(name)}</li>" for name in children[node["name"]]),
         )
         destination = ROOT / page
         destination.parent.mkdir(parents=True, exist_ok=True)

@@ -114,7 +114,6 @@
         .children li:nth-child(4n + 3) { margin-inline: auto; margin-bottom: 2.5rem; }
         .children li:nth-child(4n) { margin-left: 15%; margin-bottom: 3.5rem; }
         .children a { display: inline-block; max-width: 100%; padding: .5rem; overflow-wrap: anywhere; }
-        .children .empty { width: auto; max-width: none; margin: 0; text-align: center; color: var(--muted); }
         .connections { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
         .connections line { stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; }
 
@@ -125,8 +124,6 @@
             .graph .children { position: absolute; inset: 0; padding: 0; pointer-events: none; }
             .graph .children ul { max-width: none; }
             .graph .children li { position: absolute; width: var(--node-width); margin: 0; pointer-events: auto; }
-            .graph .children:has(.empty) { position: relative; margin-top: 2rem; }
-            .graph .children .empty { position: static; width: auto; }
         }
 
         @media (max-width: 599px) {
@@ -149,7 +146,7 @@
             <ul class="links" aria-label="External links"><li><a href="https://recmaths.ch/games/personality-test/" target="_blank" rel="noopener noreferrer">Personality Test Website</a></li></ul>
         </main>
         <nav class="children" aria-label="Children">
-            <ul><li class="empty">&lt;no child pages&gt;</li></ul>
+            <ul></ul>
         </nav>
     </div>
     <script>
@@ -168,7 +165,7 @@
             for (const character of text) value = (Math.imul(value, 31) + character.codePointAt(0)) | 0;
             return value >>> 0;
         }
-        const items = Array.from(children.children).filter(item => !item.classList.contains('empty'))
+        const items = Array.from(children.children)
             .sort((a, b) => hash(a.textContent) - hash(b.textContent));
         children.append(...items);
         // Evenly spaced horizontal positions, shuffled independently of list order.
