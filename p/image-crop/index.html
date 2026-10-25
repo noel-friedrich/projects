@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Crop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+    <style id="node-transition-offsets"></style>
+    <script>
+        // Register before the first render, including when returning via Back.
+        window.addEventListener('pageswap', event => {
+            if (event.viewTransition) rememberNodePositions(event.viewTransition);
+        });
+        window.addEventListener('pagereveal', event => {
+            if (event.viewTransition) prepareNodeTransition(event.viewTransition);
+        });
+    </script>
+    <style>
+        /* Main design settings. Layout and line drawing are below. */
+        :root {
+            --font: "Karla", sans-serif;
+            --background: #fff;
+            --ink: #292923;
+            --link: #0000ee;
+            --muted: #78786f;
+            --line: #deded7;
+            --reading-width: 30rem;
+            --side-gap: 3.5rem;
+            --node-width: 13rem;
+            --node-spacing: 100px;
+            --page-padding: 2rem;
+            --transition-duration: 600ms;
+        }
+
+        /* Shared nodes move between positions; new and departing nodes slide. */
+        @view-transition { navigation: auto; }
+        ::view-transition-group(*) {
+            animation-duration: var(--transition-duration);
+            animation-timing-function: cubic-bezier(.22, 1, .36, 1);
+        }
+        ::view-transition-old(*), ::view-transition-new(*) {
+            animation-duration: var(--transition-duration);
+        }
+        ::view-transition-new(*):only-child {
+            animation: node-enter var(--transition-duration) cubic-bezier(.22, 1, .36, 1) both;
+        }
+        ::view-transition-old(*):only-child {
+            animation: node-leave var(--transition-duration) cubic-bezier(.22, 1, .36, 1) both;
+        }
+        @keyframes node-enter {
+            from { translate: var(--node-offset-x, 0px) var(--node-offset-y, 0px); }
+            to { translate: 0 0; }
+        }
+        @keyframes node-leave {
+            from { translate: 0 0; }
+            to { translate: var(--node-offset-x, 0px) var(--node-offset-y, 0px); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            @view-transition { navigation: none; }
+        }
+
+        * { box-sizing: border-box; }
+        html { color: var(--ink); font-family: var(--font); }
+        body { margin: 0; background: var(--background); font-size: 17px; line-height: 1.55; }
+        a, a:visited { color: inherit; text-decoration: none; }
+        a:hover { text-decoration: underline; text-underline-offset: .2em; }
+        a:focus-visible { outline: 1px dotted currentColor; outline-offset: 5px; }
+        .parents a, .children a { background: #fff; }
+
+        .parents {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: .5rem 2rem;
+            padding: 2rem var(--page-padding);
+            min-height: 5.5rem;
+            color: var(--muted);
+        }
+        .parents a { padding: .35rem .5rem; }
+        .scene { position: relative; display: flow-root; }
+        .current {
+            position: relative;
+            z-index: 1;
+            background: #fff;
+            width: min(var(--reading-width), calc(100% - 2 * var(--page-padding)));
+            margin: 3rem auto 5rem;
+        }
+        h1 { margin: 0 0 1.25rem; font-size: 2rem; font-weight: 500; line-height: 1.15; letter-spacing: -.045em; }
+        .node-title { display: inline-block; }
+        .description { margin: 0; }
+        .metadata {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            gap: .15rem 1rem;
+            margin: 0 0 1.75rem;
+            color: var(--muted);
+        }
+        .metadata:empty { display: none; }
+        dt, dd { margin: 0; }
+        .links { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; padding: 0; margin: 1.75rem 0 0; list-style: none; }
+        .links:empty { display: none; }
+        .links a, .links a:visited { color: var(--link); text-decoration: underline; text-underline-offset: .2em; text-decoration-color: var(--line); }
+        .links a:hover { text-decoration-color: currentColor; }
+
+        /* Mobile: normal page scrolling, with a loose trail of child links. */
+        .children { position: relative; z-index: 1; padding: 0 var(--page-padding) 5rem; }
+        .children ul { margin: 0; padding: 0; list-style: none; }
+        .children li { width: fit-content; max-width: 85%; margin-bottom: 2rem; }
+        .children li:nth-child(4n + 2) { margin-left: auto; margin-bottom: 3rem; }
+        .children li:nth-child(4n + 3) { margin-inline: auto; margin-bottom: 2.5rem; }
+        .children li:nth-child(4n) { margin-left: 15%; margin-bottom: 3.5rem; }
+        .children a { display: inline-block; max-width: 100%; padding: .5rem; overflow-wrap: anywhere; }
+        .children .empty { width: auto; max-width: none; margin: 0; text-align: center; color: var(--muted); }
+        .connections { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+        .connections line { stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; }
+
+        /* Desktop enhancement. The unenhanced page remains usable without JS. */
+        @media (min-width: 1100px) {
+            .graph .parents { position: sticky; top: 0; }
+            .graph .current { position: sticky; margin-bottom: 0; }
+            .graph .children { position: absolute; inset: 0; padding: 0; pointer-events: none; }
+            .graph .children ul { max-width: none; }
+            .graph .children li { position: absolute; width: var(--node-width); margin: 0; pointer-events: auto; }
+            .graph .children:has(.empty) { position: relative; margin-top: 2rem; }
+            .graph .children .empty { position: static; width: auto; }
+        }
+
+        @media (max-width: 599px) {
+            :root { --page-padding: 1.5rem; }
+            .parents { justify-content: flex-start; gap: .4rem 1.25rem; padding-top: 1.5rem; padding-bottom: 1rem; }
+            .current { margin-top: 2.5rem; margin-bottom: 4rem; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="parents" aria-label="Parents"><a href="../programming/" style="view-transition-name: node-programming">Programming [57]</a></nav>
+    <div class="scene">
+        <svg class="connections" aria-hidden="true"></svg>
+        <main class="current">
+            <h1><span class="node-title" style="view-transition-name: node-image-crop">Image Crop</span></h1>
+            <dl class="metadata"><dt>Start date</dt><dd>&lt; 2023</dd></dl>
+            <p class="description">A friend asked me to make a simple website where you can crop images to A4 and other weird aspect ratios, so I made it for him (at the time, I didn&#x27;t know how scandalous A4 would be).</p>
+            <ul class="links" aria-label="External links"><li><a href="https://www.noel-friedrich.de/image-crop/" target="_blank" rel="noopener noreferrer">Website</a></li></ul>
+        </main>
+        <nav class="children" aria-label="Children">
+            <ul><li class="empty">&lt;no child pages&gt;</li></ul>
+        </nav>
+    </div>
+    <script>
+        // All layout behaviour lives here so the template is the only design file.
+        const scene = document.querySelector('.scene');
+        const current = document.querySelector('.current');
+        const parents = document.querySelector('.parents');
+        const children = document.querySelector('.children ul');
+        const svg = document.querySelector('.connections');
+        const desktop = window.matchMedia('(min-width: 1100px)');
+        const svgNS = 'http://www.w3.org/2000/svg';
+
+        // Stable disorder: revisiting a page gives you the same arrangement.
+        function hash(text) {
+            let value = 0;
+            for (const character of text) value = (Math.imul(value, 31) + character.codePointAt(0)) | 0;
+            return value >>> 0;
+        }
+        const items = Array.from(children.children).filter(item => !item.classList.contains('empty'))
+            .sort((a, b) => hash(a.textContent) - hash(b.textContent));
+        children.append(...items);
+        // Evenly spaced horizontal positions, shuffled independently of list order.
+        const mobilePositions = new Map([...items]
+            .sort((a, b) => hash('position:' + a.textContent) - hash('position:' + b.textContent))
+            .map((item, index) => [item, (index + .5) / items.length]));
+        const neighbours = [...parents.querySelectorAll('a'), ...children.querySelectorAll('a')];
+        const transitionNodes = new Map([document.querySelector('.node-title'), ...neighbours]
+            .map(node => [node, node.style.viewTransitionName]));
+        const lines = neighbours.map(() => {
+            const line = document.createElementNS(svgNS, 'line');
+            svg.append(line);
+            return line;
+        });
+
+        // Only visible nodes participate: off-screen matches otherwise travel across
+        // the entire page when navigation changes or restores the scroll position.
+        function nodeOffsets(capture = false) {
+            const viewport = window.visualViewport;
+            const left = viewport ? viewport.offsetLeft : 0;
+            const top = viewport ? viewport.offsetTop : 0;
+            const right = left + (viewport ? viewport.width : window.innerWidth);
+            const bottom = top + (viewport ? viewport.height : window.innerHeight);
+            return Object.fromEntries([...transitionNodes].flatMap(([node, name]) => {
+                const rect = node.getBoundingClientRect();
+                const visible = rect.right > left && rect.left < right && rect.bottom > top && rect.top < bottom;
+                if (capture) node.style.viewTransitionName = visible ? name : 'none';
+                if (!visible) return [];
+                const paths = [
+                    { distance: rect.right - left, x: -1, y: 0 },
+                    { distance: right - rect.left, x: 1, y: 0 },
+                    { distance: rect.bottom - top, x: 0, y: -1 },
+                    { distance: bottom - rect.top, x: 0, y: 1 },
+                ];
+                const nearest = paths.reduce((best, path) => path.distance < best.distance ? path : best);
+                const distance = nearest.distance + 2;
+                return [[name, { x: nearest.x * distance, y: nearest.y * distance }]];
+            }));
+        }
+
+        function restoreNodeNames() {
+            transitionNodes.forEach((name, node) => { node.style.viewTransitionName = name; });
+        }
+
+        // Only outgoing nodes need to carry their positions into the next document.
+        const transitionStorageKey = 'project-graph-transition-offsets';
+        function rememberNodePositions(transition) {
+            const offsets = nodeOffsets(true);
+            try { sessionStorage.setItem(transitionStorageKey, JSON.stringify(offsets)); }
+            catch { /* Navigation still works if storage is unavailable. */ }
+            transition.finished.then(restoreNodeNames);
+        }
+
+        function prepareNodeTransition(transition) {
+            layout();
+            let outgoing = {};
+            try {
+                outgoing = JSON.parse(sessionStorage.getItem(transitionStorageKey) || '{}');
+                sessionStorage.removeItem(transitionStorageKey);
+            } catch { /* Incoming nodes can still use their measured positions. */ }
+            const offsets = { ...outgoing, ...nodeOffsets(true) };
+            document.querySelector('#node-transition-offsets').textContent = Object.entries(offsets)
+                .map(([name, offset]) => '::view-transition-group(' + CSS.escape(name) + ') {' +
+                    '--node-offset-x: ' + offset.x + 'px; --node-offset-y: ' + offset.y + 'px; }')
+                .join('\n');
+            transition.finished.then(restoreNodeNames);
+        }
+
+        // End each line outside the text, leaving the central reading area clear.
+        function edge(rect, towards, gap) {
+            const x = rect.left + rect.width / 2;
+            const y = rect.top + rect.height / 2;
+            const dx = towards.left + towards.width / 2 - x;
+            const dy = towards.top + towards.height / 2 - y;
+            const ratio = Math.min((rect.width / 2 + gap) / (Math.abs(dx) || 1), (rect.height / 2 + gap) / (Math.abs(dy) || 1));
+            return { x: x + dx * ratio, y: y + dy * ratio };
+        }
+
+        function drawLines() {
+            const origin = scene.getBoundingClientRect();
+            const centre = current.getBoundingClientRect();
+            neighbours.forEach((node, i) => {
+                const rect = node.getBoundingClientRect();
+                const start = edge(centre, rect, 24);
+                const end = edge(rect, centre, 10);
+                lines[i].setAttribute('x1', start.x - origin.left);
+                lines[i].setAttribute('y1', start.y - origin.top);
+                lines[i].setAttribute('x2', end.x - origin.left);
+                lines[i].setAttribute('y2', end.y - origin.top);
+            });
+        }
+
+        function layout() {
+            document.body.classList.toggle('graph', desktop.matches);
+            items.forEach(item => item.removeAttribute('style'));
+            if (!desktop.matches) {
+                scene.style.height = '';
+                current.style.top = '';
+                current.style.marginTop = '';
+                items.forEach(item => {
+                    const available = Math.max(0, children.clientWidth - item.offsetWidth);
+                    item.style.marginLeft = available * mobilePositions.get(item) + 'px';
+                });
+                drawLines();
+                return;
+            }
+
+            const settings = getComputedStyle(document.documentElement);
+            const rem = parseFloat(settings.fontSize);
+            const padding = parseFloat(settings.getPropertyValue('--page-padding')) * rem;
+            const sideGap = parseFloat(settings.getPropertyValue('--side-gap')) * rem;
+            const spacing = parseFloat(settings.getPropertyValue('--node-spacing'));
+            const nodeWidth = parseFloat(settings.getPropertyValue('--node-width')) * rem;
+            const sceneTop = scene.getBoundingClientRect().top + window.scrollY;
+            const focusTop = Math.max(parents.offsetHeight + 24, (window.innerHeight - current.offsetHeight) / 2);
+            current.style.top = focusTop + 'px';
+            current.style.marginTop = Math.max(24, focusTop - sceneTop) + 'px';
+
+            const readingLeft = (scene.clientWidth - current.offsetWidth) / 2;
+            const laneWidth = Math.max(nodeWidth, readingLeft - sideGap - padding);
+            const lanes = [[], []];
+            items.forEach((item, index) => {
+                const seed = hash(item.textContent);
+                item.style.width = Math.min(nodeWidth, laneWidth) + 'px';
+                const inset = (seed % 101) / 100 * Math.max(0, laneWidth - item.offsetWidth);
+                item.style.left = (index % 2 === 0 ? padding + inset : scene.clientWidth - padding - laneWidth + inset) + 'px';
+                lanes[index % 2].push(item);
+            });
+            const laneHeights = lanes.map(lane => lane.reduce((height, item) => height + Math.max(spacing, item.offsetHeight + 40), 0));
+            const height = Math.max(window.innerHeight - sceneTop, current.offsetHeight + parseFloat(current.style.marginTop) + 80, ...laneHeights.map(h => h + 100));
+            scene.style.height = height + 'px';
+
+            lanes.forEach((lane, side) => {
+                let y = 30 + side * 35;
+                const extra = Math.max(0, height - laneHeights[side] - 120) / Math.max(1, lane.length);
+                lane.forEach(item => {
+                    const jitter = hash(item.textContent) % 25;
+                    item.style.top = y + jitter + extra / 2 + 'px';
+                    y += Math.max(spacing, item.offsetHeight + 40) + extra;
+                });
+            });
+            drawLines();
+        }
+
+        let frame;
+        function scheduleLayout() {
+            cancelAnimationFrame(frame);
+            frame = requestAnimationFrame(layout);
+        }
+        let lineFrame;
+        window.addEventListener('scroll', () => {
+            cancelAnimationFrame(lineFrame);
+            lineFrame = requestAnimationFrame(drawLines);
+        }, { passive: true });
+        window.addEventListener('resize', scheduleLayout);
+        desktop.addEventListener('change', scheduleLayout);
+        new ResizeObserver(scheduleLayout).observe(current);
+        document.fonts.ready.then(scheduleLayout);
+        layout();
+    </script>
+</body>
+</html>

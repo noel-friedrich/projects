@@ -2,7 +2,7 @@
     {
         "name": "Projects",
         "parents": [],
-        "description": "An (incomplete) list of past and present projects I've worked on. Some are big, some are small, some are done, some active, some in-between. I've organised them as a graph you can step through, feel free to explore and ask. Almost all projects contain some URL to click on.",
+        "description": "An (incomplete) list of past and present projects I've worked on. Some are big, some are small, some are done, some active, some in-between. I've organised them as a graph you can step through, feel free to explore. Almost all projects contain some URL to click on.",
         "last-update-date": "25.10.2026"
     },
     {
@@ -1060,7 +1060,8 @@
         "description": "What point in Germany is furthest from any house? In other words, how far from civilisation can you get? I calculated points, traveled to the furthest one and unfortunately found something there which made me very unhappy (you can probably guess what I found). I made a video about it, especially talking about Voronoi Diagrams, which are exactly the right tool for this job.",
         "links": [
             {
-                "name": "YouTube Video"
+                "name": "YouTube Video",
+                "url": "https://www.youtube.com/watch?v=8D5J_OrcfOc"
             },
             {
                 "name": "Voronoi Diagram Interactive",
