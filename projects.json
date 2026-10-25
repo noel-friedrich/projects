@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Projects",
+            "parents": [],
+            "description": "An (incomplete) list of past and present projects I've worked on",
+            "last-update-date": "25.10.2026"
+        },
+        {
+            "name": "Terminal Website",
+            "start-date": "15.07.2022",
+            "parents": ["Programming"],
+            "description": "My terminal website, serving as my homepage. Over 200 commands, home to many more smaller projects. There's A LOT of fun games to play, secrets to find, simulations to run and tools to use.",
+            "links": [
+                {"name": "Website", "url": "https://www.noel-friedrich.de/terminal"},
+                {"name": "GitHub", "url": "https://github.com/noel-friedrich/terminal"}
+            ]
+        },
+        {
+            "name": "Perli"
+        },
+        {
+            "name": "Library of Léon"
+        },
+        {
+            "name": "Paper Packing"
+        },
+        {
+            "name": "AntiCookieBox"
+        },
+        {
+            "name": "Stray"
+        },
+        {
+            "name": "Partycolo"
+        },
+        {
+            "name": "HR-Codes (Hackathon Project)"
+        },
+        {
+            "name": "3d Homepage"
+        },
+        {
+            "name": "Turtlo"
+        },
+        {
+            "name": "Covid in Coville"
+        },
+        {
+            "name": "Compli"
+        },
+        {
+            "name": ""
+        }
+    ]
+}
