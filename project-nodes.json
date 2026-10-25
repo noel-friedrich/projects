@@ -2,7 +2,7 @@
     {
         "name": "Projects",
         "parents": [],
-        "description": "An (incomplete) list of past and present projects I've worked on. Some are big, some are small, some are done, some active, some in-between. I've organised them as a graph you can step through, feel free to explore. Almost all projects contain some URL to click on.",
+        "description": "An (incomplete) list of past and present projects I've worked on. Some are big, some are small, some are done, some active, some in-between. I've organised them as a graph you can step through; feel free to explore. Almost all projects contain some URL to click on.",
         "last-update-date": "25.10.2026"
     },
     {
@@ -13,13 +13,13 @@
     {
         "name": "Programming",
         "parents": ["Projects"],
-        "description": "All my projects that mostly consistent of programming. With AI coding, many of these projects could be completed much, much quicker than when I worked on them. I find that a little sad, but I also realise that all of these projects are already in the context of the time of creation and my current set of skills."
+        "description": "All my projects that mostly consist of programming. With AI coding, many of these projects could be completed much, much quicker than when I worked on them. I find that a little sad, but I also realise that all of these projects are already in the context of the time of creation and my current set of skills."
     },
     {
         "name": "Terminal Website",
         "start-date": "15.07.2022",
         "parents": ["Programming"],
-        "description": "My terminal website, serving as my homepage. Over 200 commands, home to many more smaller projects. There's A LOT of fun games to play, secrets to find, simulations to run and tools to use.",
+        "description": "My terminal website, serving as my homepage. Over 200 commands, home to many more smaller projects. There are A LOT of fun games to play, secrets to find, simulations to run and tools to use.",
         "links": [
             {
                 "name": "Website",
@@ -35,7 +35,7 @@
         "name": "Maths",
         "start-date": "01.09.2019",
         "parents": ["Projects"],
-        "description": "I started liking Mathematics as a fun thing to do in school and have since made many projects to communicate, teach, research and illustrate some maths. I studied/study Mathematics at Trinity College Dublin and ETH Zürich for my Bachelors."
+        "description": "I started liking Mathematics as a fun thing to do in school and have since made many projects to communicate, teach, research and illustrate some maths. I studied/study Mathematics at Trinity College Dublin and ETH Zürich for my Bachelor's."
     },
     {
         "name": "Social Media Accounts",
@@ -81,7 +81,7 @@
         "name": "Hackathons",
         "parents": ["Programming"],
         "start-date": "03.11.2023",
-        "description": "I like to participate at Hackathons. I have won once in Dublin at HackTrinity in 2023, which was also my very first Hackathon. I think Hackathons have suffered a lot from AI. I've mostly participated in Dublin, including at HackTrinity, HackIreland and HackEurope (the Trilogy (Trinity))."
+        "description": "I like to participate in Hackathons. I won once in Dublin at HackTrinity in 2023, which was also my very first Hackathon. I think Hackathons have suffered a lot from AI. I've mostly participated in Dublin, including at HackTrinity, HackIreland and HackEurope (the Trilogy (Trinity))."
     },
     {
         "name": "Recreational Maths Zürich",
@@ -119,7 +119,7 @@
         "parents": ["Android Apps"],
         "start-date": "04.08.2023",
         "end-date": "01.01.2026",
-        "description": "Perli was an app to train your memory, based off the idea that you some saw bombs in a small grid (e.g. 5x5), then had to memorize these bomb positions and then had to draw a path from a random starting point to a random end point without touching any of the bombs (naturally, the bombs were hidden for this part of the game). The app contained a great music soundtrack and soundeffects made by my friend Mattis Strickert and many levels of variying difficulty. It even contained custom buyable grid-skins and a one-minute challenge mode. Looking back at it, it was a really fun app!",
+        "description": "Perli was an app to train your memory, based off the idea that you saw some bombs in a small grid (e.g. 5x5), then had to memorize these bomb positions and then had to draw a path from a random starting point to a random end point without touching any of the bombs (naturally, the bombs were hidden for this part of the game). The app contained a great music soundtrack and sound effects made by my friend Mattis Strickert and many levels of varying difficulty. It even contained custom buyable grid-skins and a one-minute challenge mode. Looking back at it, it was a really fun app!",
         "links": [
             {
                 "name": "GitHub Page",
@@ -132,7 +132,7 @@
         "parents": ["Programming", "YouTube"],
         "start-date": "10.10.2023",
         "end-date": "01.01.2025",
-        "description": "I read Jorge Luis Borges short story on 'The Library of Babel' and wanted to recreate the Library in a cool 3d-way, while also extending it to contain all possible texts. Basically, it's a 3d library where each floor contains all possible texts ('books'). In the short story, these are all distributed randomly. There are a lot of weird things to realise about this concept. For example, there must be one book somewhere containing the answer to any question anyone has ever asked. In fact, even this very text is in the library (see the link below). I'm really proud of the resulting website and Maths behind it, there's a lot of fun things about it. I also made a YouTube video about it. Oh and I added a terrifying Horror Game to it. The website (the Library of Léon (lol)) is inspired by Jonathan Basile's great implementation of the Library of Babel as described in the short story.",
+        "description": "I read Jorge Luis Borges' short story on 'The Library of Babel' and wanted to recreate the Library in a cool 3d-way, while also extending it to contain all possible texts. Basically, it's a 3d library where each floor contains all possible texts ('books'). In the short story, these are all distributed randomly. There are a lot of weird things to realise about this concept. For example, there must be one book somewhere containing the answer to any question anyone has ever asked. In fact, even this very text is in the library (see the link below). I'm really proud of the resulting website and Maths behind it; there are a lot of fun things about it. I also made a YouTube video about it. Oh and I added a terrifying Horror Game to it. The website (the Library of Léon (lol)) is inspired by Jonathan Basile's great implementation of the Library of Babel as described in the short story.",
         "links": [
             {
                 "name": "GitHub Page",
@@ -164,7 +164,7 @@
         "name": "Paper Packing",
         "parents": ["Maths", "YouTube"],
         "start-date": "01.10.2025",
-        "description": "In October 2025, I realised that the Standard for A4 paper defines it in whole millimetres. I subsequently realised that the resulting error means that you can fit more sheets of A10 into one A0 than you 'should'. I proved exactly how many actually fit in (surprisingly difficult mathematical question, see research paper I presented at the FUN26 conference), made a YouTube video about it, got it featured on Matt Parker's YouTube channel and am still working on it some more. There's still some questions left unanswered that I would like to answer.",
+        "description": "In October 2025, I realised that the Standard for A4 paper defines it in whole millimetres. I subsequently realised that the resulting error means that you can fit more sheets of A10 into one A0 than you 'should'. I proved exactly how many actually fit in (surprisingly difficult mathematical question, see research paper I presented at the FUN26 conference), made a YouTube video about it, got it featured on Matt Parker's YouTube channel and am still working on it some more. There are still some questions left unanswered that I would like to answer.",
         "links": [
             {
                 "name": "GitHub Page",
@@ -179,7 +179,7 @@
                 "url": "https://www.youtube.com/watch?v=zDKBCIMkDbw"
             },
             {
-                "name": "Matt Parkers YouTube Video",
+                "name": "Matt Parker's YouTube Video",
                 "url": "https://www.youtube.com/watch?v=XllQPr8FtPE"
             },
             {
@@ -210,7 +210,7 @@
         "start-date": "23.11.2023",
         "parents": ["Android Apps"],
         "end-date": "01.01.2026",
-        "description": "A flutter app that let's you hunt virtual coins in the real world. Here is the (oh god how embarassing) text from the Google Play page (that's now gone): 'Embark on an exciting urban adventure with our innovative treasure hunt app! Discover the thrill of chasing goals as you explore your city like never before. With just a tap, generate a coin placed randomly between 1 to 5 kilometers away from your location. Armed only with a compass pointing you in a direction, set off on a captivating quest to find the hidden treasure.'.",
+        "description": "A flutter app that lets you hunt virtual coins in the real world. Here is the (oh god how embarrassing) text from the Google Play page (that's now gone): 'Embark on an exciting urban adventure with our innovative treasure hunt app! Discover the thrill of chasing goals as you explore your city like never before. With just a tap, generate a coin placed randomly between 1 and 5 kilometers away from your location. Armed only with a compass pointing you in a direction, set off on a captivating quest to find the hidden treasure.'",
         "links": [
             {
                 "name": "GitHub Page",
@@ -222,7 +222,7 @@
         "name": "Partycolo",
         "start-date": "unsure",
         "parents": ["Programming"],
-        "description": "At the end of high school, I was frustrated with paid drinking game apps. So I made my own! It's very embarassing and the questions came from some random websites I found. I hope it still works.",
+        "description": "At the end of high school, I was frustrated with paid drinking game apps. So I made my own! It's very embarrassing and the questions came from some random websites I found. I hope it still works.",
         "links": [
             {
                 "name": "Website",
@@ -235,7 +235,7 @@
         "start-date": "05.11.2023",
         "end-date": "06.11.2023",
         "parents": ["Hackathons", "QR Code Projects"],
-        "description": "A new standard for QR Codes! These codes are not just computer-readable, but also human-readable (aren't all you may say now)! Isn't that awesome?! Me and my team made this overnight and won the Hackathon (HackTrinity 2023 at Trinity College Dublin).",
+        "description": "A new standard for QR Codes! These codes are not just computer-readable, but also human-readable (aren't they all, you may say now)! Isn't that awesome?! My team and I made this overnight and won the Hackathon (HackTrinity 2023 at Trinity College Dublin).",
         "links": [
             {
                 "name": "Website",
@@ -280,7 +280,7 @@
         "parents": ["Programming"],
         "start-date": "01.01.2022",
         "end-date": "01.08.2022",
-        "description": "Covid in Coville was a project done for German national science fair when I was in high school in 2022. I won the lower saxony regional and state competition in the 'Computer Science / Maths' category. I won some prizes on the national level, including a scholarship at a university of the German military and the Konrad-Zuse Youth-Prize for Computer Science given out by the Eduard-Rhein-Foundation. It was about simulating the spread of a city in an interactive web-app. The project materials are in German only.",
+        "description": "Covid in Coville was a project done for a German national science fair when I was in high school in 2022. I won the Lower Saxony regional and state competition in the 'Computer Science / Maths' category. I won some prizes on the national level, including a scholarship at a university of the German military and the Konrad-Zuse Youth-Prize for Computer Science given out by the Eduard-Rhein-Foundation. It was about simulating the spread of a city in an interactive web-app. The project materials are in German only.",
         "links": [
             {
                 "name": "GitHub Page",
@@ -312,7 +312,7 @@
         "name": "Compli",
         "start-date": "05.02.2023",
         "parents": ["Android Apps"],
-        "description": "My first Android App! It was a shitty app that shows the last time since you've given a compliment - thus making you want to give more compliments to people in your life! It doesn't work anymore, it was built with Android Studio.",
+        "description": "My first Android App! It was a shitty app that shows the time since you last gave a compliment - thus making you want to give more compliments to people in your life! It doesn't work anymore; it was built with Android Studio.",
         "links": [
             {
                 "name": "GitHub Page",
@@ -340,7 +340,7 @@
         "name": "Spion",
         "start-date": "< 2024",
         "parents": ["Programming"],
-        "description": "A game I made with a friend that you play by giving your phone around. Description from the website: 'Each player is assigned a role: spy or agent. The agents must find out who the spy is. The spy must find out where they are. To do this, the players ask each other questions. The spy must try to answer the questions without revealing their location. The agents must try to find out who is a spy without giving too obvious a clue as to their location. The agents win if they have unmasked all the spies. A player can be unmasked by asking if they are a spy. If an agent is accidentally unmasked, the spies win. The spy wins if they find out where they are. They can say at any time 'I am a spy and I know where I am.' Then they must say where they are. If they guess correctly, the spies win.'.",
+        "description": "A game I made with a friend that you play by passing your phone around. Description from the website: 'Each player is assigned a role: spy or agent. The agents must find out who the spy is. The spy must find out where they are. To do this, the players ask each other questions. The spy must try to answer the questions without revealing their location. The agents must try to find out who is a spy without giving too obvious a clue as to their location. The agents win if they have unmasked all the spies. A player can be unmasked by asking if they are a spy. If an agent is accidentally unmasked, the spies win. The spy wins if they find out where they are. They can say at any time 'I am a spy and I know where I am.' Then they must say where they are. If they guess correctly, the spies win.'",
         "links": [
             {
                 "name": "Website",
@@ -360,7 +360,7 @@
         "start-date": "< 2023",
         "end-date": "01.01.2025",
         "parents": ["Selfmade Productivity Things"],
-        "description": "A bad text editor on the web that you can use to write texts. On the website I wrote that it was made to be 'less distracting'. In modern language: I didn't know how to implement complex things. I once wrote a Poetry Slam text for my German class in high school using this website. On the day of the Slam, I opened the site and the text somehow got lost (with no backups). It was very hard to explain to the teacher what happened. Needless to say, they didn't really believe me and instead assumed that I forgot to do it. I had to improvise the text in the class itself and it actually turned out to be quite good (the substitute spontaneous text). I'd love to do some Poetry Slam in the future, they seem like a fun idea! Anyhow, all of this is to say that you should maybe not use this app for real-life things, even though I still think it has a nice aesthetic.",
+        "description": "A bad text editor on the web that you can use to write texts. On the website I wrote that it was made to be 'less distracting'. In modern language: I didn't know how to implement complex things. I once wrote a Poetry Slam text for my German class in high school using this website. On the day of the Slam, I opened the site and the text somehow got lost (with no backups). It was very hard to explain to the teacher what happened. Needless to say, they didn't really believe me and instead assumed that I forgot to do it. I had to improvise the text in the class itself and it actually turned out to be quite good (the substitute spontaneous text). I'd love to do some Poetry Slam in the future; it seems like a fun idea! Anyhow, all of this is to say that you should maybe not use this app for real-life things, even though I still think it has a nice aesthetic.",
         "links": [
             {
                 "name": "Website",
@@ -373,7 +373,7 @@
         "start-date": "< 2023",
         "end-date": "01.01.2025",
         "parents": ["Selfmade Productivity Things"],
-        "description": "A bad presentation software to use instead of Google Sheets or Powerpoint. I actually used it for a couple of presentations in school and enjoyed it a lot. I wouldn't trust the autosave too much, but I think it's still kind of cool!",
+        "description": "Bad presentation software to use instead of Google Sheets or Powerpoint. I actually used it for a couple of presentations in school and enjoyed it a lot. I wouldn't trust the autosave too much, but I think it's still kind of cool!",
         "links": [
             {
                 "name": "Website",
@@ -386,7 +386,7 @@
         "start-date": "01.03.2023",
         "end-date": "01.01.2025",
         "parents": ["Selfmade Productivity Things"],
-        "description": "A crappy todo app without any security. It does what it wants to kind of well. I know some people still use it to this day, it works okay. It's nice that it's easily accessible even across devices. On the bad side, this also means that it's very accessible for other people to access your todos, which might be very personal. Please don't trust this site too much.",
+        "description": "A crappy todo app without any security. It does what it wants to kind of well. I know some people still use it to this day; it works okay. It's nice that it's easily accessible even across devices. On the bad side, this also means that it's very accessible for other people to access your todos, which might be very personal. Please don't trust this site too much.",
         "links": [
             {
                 "name": "GitHub Page",
@@ -418,7 +418,7 @@
         "name": "FeelBadTimer",
         "start-date": "01.08.2025",
         "parents": ["Android Apps"],
-        "description": "An app that constantly shows a floating timer on your screen showing how much time you've spent on your phone already. It's supposed to make you feel bad, hence the name. It's not publically released yet, but it should be released soon (Written in October 2026).",
+        "description": "An app that constantly shows a floating timer on your screen showing how much time you've spent on your phone already. It's supposed to make you feel bad, hence the name. It's not publicly released yet, but it should be released soon (Written in October 2026).",
         "links": [
             {
                 "name": "Play Store Page (might not be public yet)",
@@ -470,7 +470,7 @@
         "name": "Draw on QR Codes",
         "start-date": "01.10.2026",
         "parents": ["QR Code Projects"],
-        "description": "A site that let's you create QR codes that contain some content while also preserving something you drew on them. It uses all the tricks!",
+        "description": "A site that lets you create QR codes that contain some content while also preserving something you drew on them. It uses all the tricks!",
         "links": [
             {
                 "name": "Website",
@@ -520,7 +520,7 @@
         "start-date": "20.02.2026",
         "end-date": "22.02.2026",
         "parents": ["Hackathons"],
-        "description": "From the GitHub Repo description: '@everyone is a rapid-contact web app designed for urgent personal situations (mental health crises, safety check-ins, and similar moments where reaching someone fast matters).'. I developed it with three others at HackEurope 2026. It was a great time, but we didn't score well. It was basically a button to press in case of panic attacks that calls all of your friends at the same time and connects you to the one picking up first. I still like the idea a lot.",
+        "description": "From the GitHub Repo description: '@everyone is a rapid-contact web app designed for urgent personal situations (mental health crises, safety check-ins, and similar moments where reaching someone fast matters).' I developed it with three others at HackEurope 2026. It was a great time, but we didn't score well. It was basically a button to press in case of panic attacks that calls all of your friends at the same time and connects you to the one picking up first. I still like the idea a lot.",
         "links": [
             {
                 "name": "GitHub Page",
@@ -536,7 +536,7 @@
         "name": "Tabletop",
         "start-date": "unsure",
         "parents": ["Programming"],
-        "description": "Have you ever wanted to play cards with friends but forgot to bring the actual cards? No worries! This is the website for you. One person opens the website on their tv/computer, the others connect to it via WebRTC and they can interact and play any card game just by dragging the cards. It has a couple of useful features. I spent quite a while on this. It's a shame I've never used it. It's just worse than playing cards in real life. Perhaps this will be useful in the next epidemic.",
+        "description": "Have you ever wanted to play cards with friends but forgotten to bring the actual cards? No worries! This is the website for you. One person opens the website on their tv/computer; the others connect to it via WebRTC and they can interact and play any card game just by dragging the cards. It has a couple of useful features. I spent quite a while on this. It's a shame I've never used it. It's just worse than playing cards in real life. Perhaps this will be useful in the next epidemic.",
         "links": [
             {
                 "name": "GitHub Page",
@@ -570,7 +570,7 @@
         "start-date": "01.12.2024",
         "end-date": "01.04.2025",
         "parents": ["Programming", "YouTube", "Maths"],
-        "description": "I wanted to visit all Tram Stations in Zürich in one day, only by Tram. Using public timetables, I tried to find optimized paths using different approaches such as Time-Dependant Ant Colony Optimization, Heuristic-Optimized Nearest-Neighbour Searches and more. This problem is a Time-Dependant Travelling-Salesperson-Problem (TD-TSP) and is significantly harder than the 'traditional' TSP, as the introduction of timetables make 'traditional' efficient optimization techniques hard. Since I want paths that are executable in real life, the optimization also includes minimum buffer times and plan-B optimizations. I actually did it and set the new record of 9h 35min.",
+        "description": "I wanted to visit all Tram Stations in Zürich in one day, only by Tram. Using public timetables, I tried to find optimized paths using different approaches such as Time-Dependent Ant Colony Optimization, Heuristic-Optimized Nearest-Neighbour Searches and more. This problem is a Time-Dependent Travelling-Salesperson-Problem (TD-TSP) and is significantly harder than the 'traditional' TSP, as the introduction of timetables makes 'traditional' efficient optimization techniques hard. Since I want paths that are executable in real life, the optimization also includes minimum buffer times and plan-B optimizations. I actually did it and set the new record of 9h 35min.",
         "links": [
             {
                 "name": "GitHub Page",
@@ -587,7 +587,7 @@
         "start-date": "22.02.2025",
         "end-date": "24.02.2025",
         "parents": ["Hackathons"],
-        "description": "An AI agent going rouge and writing his own wiki. You could see what articles he wrote and there was even a Twitch livestream where you could watch him work tirelessly. It got pretty complicated, and it was quite cool. We worked on it at the HackIreland Hackathon in 2025. I liked it, but it also didn't score very well. In retrospect, it's quite similar to Grokipedia, only that it doesn't actually pretend that it's an actually usable Wiki (which is quite the important distinction in my opinion).",
+        "description": "An AI agent going rogue and writing his own wiki. You could see what articles he wrote and there was even a Twitch livestream where you could watch him work tirelessly. It got pretty complicated, and it was quite cool. We worked on it at the HackIreland Hackathon in 2025. I liked it, but it also didn't score very well. In retrospect, it's quite similar to Grokipedia, only that it doesn't actually pretend that it's an actually usable Wiki (which is quite the important distinction in my opinion).",
         "links": [
             {
                 "name": "GitHub Page",
@@ -663,7 +663,7 @@
         "name": "Norsecode",
         "start-date": "2023",
         "parents": ["Programming"],
-        "description": "I thought I could teach myself to read messages by making my phone buzz the message in morse code in my pocket. I also optimized my own version of morse code. Surprisingly, this won me the regional round of the science competition 'Jugend Forscht' in the state of lower saxony in 2023. Looking back at it, this project had a weird 'vibe', but I somehow argued that this was in fact 'creating a new human sense', which was, needless to say, overselling it a bit.",
+        "description": "I thought I could teach myself to read messages by making my phone buzz the message in morse code in my pocket. I also optimized my own version of morse code. Surprisingly, this won me the regional round of the science competition 'Jugend Forscht' in the state of Lower Saxony in 2023. Looking back at it, this project had a weird 'vibe', but I somehow argued that this was in fact 'creating a new human sense', which was, needless to say, overselling it a bit.",
         "links": [
             {
                 "name": "Website",
@@ -675,7 +675,7 @@
         "name": "Terml",
         "start-date": "2024",
         "parents": ["Programming"],
-        "description": "I thought I'd make my own programming website for my terminal website to run on in the future. Turns out I was really bad at making a programming language. But it's so fun! You should read the examples on the GitHub Repo, it's quite funky.",
+        "description": "I thought I'd make my own programming website for my terminal website to run on in the future. Turns out I was really bad at making a programming language. But it's so fun! You should read the examples on the GitHub Repo; it's quite funky.",
         "links": [
             {
                 "name": "GitHub Page",
@@ -707,7 +707,7 @@
         "name": "Miniwelt",
         "start-date": "01.07.2026",
         "parents": ["Programming"],
-        "description": "A voxel game which let's you build and easily share 256x256x256 worlds. You can change the scale of the player with a push of the button, which means that things get crazy. It's a pretty complex and cool game made to be used across many devices. It even runs on your phone! It's hosted on Cloudflare and has accounts, moderation and a bunch of fun worlds. Unfortunately, it has no users (though I might make a YouTube video about it some day).",
+        "description": "A voxel game which lets you build and easily share 256x256x256 worlds. You can change the scale of the player with a push of the button, which means that things get crazy. It's a pretty complex and cool game made to be used across many devices. It even runs on your phone! It's hosted on Cloudflare and has accounts, moderation and a bunch of fun worlds. Unfortunately, it has no users (though I might make a YouTube video about it some day).",
         "links": [
             {
                 "name": "Website",
@@ -731,7 +731,7 @@
         "name": "Bad Captchas",
         "start-date": "< 2023",
         "parents": ["Programming"],
-        "description": "I wanted to make a YouTube videos about funny and stupid ideas of CAPTCHAs that I would implement for people to try and pass. I never actually made the video, but some ideas got implemented.",
+        "description": "I wanted to make a YouTube video about funny and stupid ideas of CAPTCHAs that I would implement for people to try and pass. I never actually made the video, but some ideas got implemented.",
         "links": [
             {
                 "name": "Website",
@@ -743,7 +743,7 @@
         "name": "Bad JS Chess Engine",
         "start-date": "< 2023",
         "parents": ["Programming"],
-        "description": "Not much to say about it. It's just a bad chess engine. I also made a version where you can play against your friends. Castling and En Passent are implemented incorrectly I believe. But you can still try to beat my engine, it's probably rated at about 1100 Elo.",
+        "description": "Not much to say about it. It's just a bad chess engine. I also made a version where you can play against your friends. Castling and En Passant are implemented incorrectly I believe. But you can still try to beat my engine; it's probably rated at about 1100 Elo.",
         "links": [
             {
                 "name": "Play the Engine Website",
@@ -759,7 +759,7 @@
         "name": "Convert",
         "start-date": "2020",
         "parents": ["Programming"],
-        "description": "This was probably my first real programming website project. It's a tool which let's you write a program in an abstract Scratch-like language and then lets you 'compile' that program into multiple programming languages. I think the idea was quite cool!",
+        "description": "This was probably my first real programming website project. It's a tool which lets you write a program in an abstract Scratch-like language and then lets you 'compile' that program into multiple programming languages. I think the idea was quite cool!",
         "links": [
             {
                 "name": "Website",
@@ -772,7 +772,7 @@
         "start-date": "01.08.2022",
         "end-date": "01.01.2024",
         "parents": ["Covid in Coville"],
-        "description": "This was an attempt to turn my Covid in Coville project into a game where you are in the seat of a local government and are supposed to try to mitigate an epidemic spreading through town. The game never got finished, but the concept and demo is quite cool.",
+        "description": "This was an attempt to turn my Covid in Coville project into a game where you are in the seat of a local government and are supposed to try to mitigate an epidemic spreading through town. The game never got finished, but the concept and demo are quite cool.",
         "links": [
             {
                 "name": "Demo Website",
@@ -784,7 +784,7 @@
         "name": "Draw",
         "start-date": "< 2023",
         "parents": ["Selfmade Productivity Things"],
-        "description": "A website that let's you draw on an infinitely extendable surface. Useful to doodle sometimes. Really, really simple.",
+        "description": "A website that lets you draw on an infinitely extendable surface. Useful to doodle sometimes. Really, really simple.",
         "links": [
             {
                 "name": "Website",
@@ -833,7 +833,7 @@
         "name": "Pangram Search",
         "start-date": "01.10.2024",
         "parents": ["Programming", "YouTube", "Maths"],
-        "description": "I tried finding a good german perfect pangram (a sentence containing every letter exactly once). I found a good candidate and made a fun YouTube video about it too. The video is in German. I also made a fun website which helps to find them. The German language makes it much easier than English, since you have additional vowels in the form of Umlaute (äöü), which help massively when constructing words and especially sensical sentences.",
+        "description": "I tried finding a good German perfect pangram (a sentence containing every letter exactly once). I found a good candidate and made a fun YouTube video about it too. The video is in German. I also made a fun website which helps to find them. The German language makes it much easier than English, since you have additional vowels in the form of Umlaute (äöü), which help massively when constructing words and especially sensical sentences.",
         "links": [
             {
                 "name": "YouTube Video",
@@ -850,7 +850,7 @@
         "start-date": "01.12.2025",
         "end-date": "01.04.2026",
         "parents": ["Paper Packing", "Library of Léon"],
-        "description": "I decided to make a digital art gallery showing all the proof pictures from the paper packing project. If you want to understand what these mean, you should read the research paper. The library code is a copy of the Library of Leon project.",
+        "description": "I decided to make a digital art gallery showing all the proof pictures from the paper packing project. If you want to understand what these mean, you should read the research paper. The library code is a copy of the Library of Léon project.",
         "links": [
             {
                 "name": "Website",
@@ -866,7 +866,7 @@
         "name": "Webcam Games",
         "start-date": "< 2023",
         "parents": ["Programming"],
-        "description": "I always liked the idea of console like the Nintendo Wii or the XBOX Connect things where you could actually move in real life to interact with the games. So I made two games which let you interact with the real world through the webcam.",
+        "description": "I always liked the idea of consoles like the Nintendo Wii or the XBOX Kinect things where you could actually move in real life to interact with the games. So I made two games which let you interact with the real world through the webcam.",
         "links": [
             {
                 "name": "Webcam Quiz Game",
@@ -882,7 +882,7 @@
         "name": "Random Number Websites",
         "start-date": "<= 2023",
         "parents": ["Programming", "Selfmade Productivity Things"],
-        "description": "My physics teacher in high school used to pick students at random to present the homework. So I made him a website which gives a random number. In fact I made two. Allegations rised that I somehow manipulated the results, but no one ever managed to prove anything.",
+        "description": "My physics teacher in high school used to pick students at random to present the homework. So I made him a website which gives a random number. In fact I made two. Allegations arose that I somehow manipulated the results, but no one ever managed to prove anything.",
         "links": [
             {
                 "name": "First Random Website",
@@ -940,7 +940,7 @@
         "start-date": "01.01.2024",
         "end-date": "01.06.2024",
         "parents": ["Social Projects"],
-        "description": "Every weekday, me and a friend organised a walk to college from Trinity Halls to Trinity College in Dublin. The walk was approximately 5 kilometers and a few people showed up. We even had a leaderboard!",
+        "description": "Every weekday, a friend and I organised a walk to college from Trinity Halls to Trinity College in Dublin. The walk was approximately 5 kilometers and a few people showed up. We even had a leaderboard!",
         "links": [
             {
                 "name": "Website",
@@ -952,7 +952,7 @@
         "name": "Wurzle",
         "start-date": "20.07.2025",
         "parents": ["Recreational Maths Zürich"],
-        "description": "A daily game about finding a root of a hidden function. Description from the website: 'There is a secret function behind the scenes and you need to find a root (i.e. an x where f(x)=0). You can input x values and you will be shown corresponding outputs. If the response is (approximately) zero, you win! The fewer values you need, the better your score.'.",
+        "description": "A daily game about finding a root of a hidden function. Description from the website: 'There is a secret function behind the scenes and you need to find a root (i.e. an x where f(x)=0). You can input x values and you will be shown corresponding outputs. If the response is (approximately) zero, you win! The fewer values you need, the better your score.'",
         "links": [
             {
                 "name": "Game Website",
@@ -977,7 +977,7 @@
         "name": "Searching Angela Merkel on Wikipedia",
         "start-date": "2023",
         "parents": ["Programming"],
-        "description": "If you start at a random Wikipedia article in the German version of Wikipedia and want to go to Angela Merkels article with the fewest clicks possible by just clicking links within the article body, how long do you take on average if you play optimally? That unnecessarily long question sparked the idea for my second ever serious YouTube video! Unfortunately, it's in German. So I'll spoil: 2.887 (surprisingly low, right??). You should learn German and watch the video!",
+        "description": "If you start at a random Wikipedia article in the German version of Wikipedia and want to go to Angela Merkel's article with the fewest clicks possible by just clicking links within the article body, how long do you take on average if you play optimally? That unnecessarily long question sparked the idea for my second ever serious YouTube video! Unfortunately, it's in German. So I'll spoil: 2.887 (surprisingly low, right??). You should learn German and watch the video!",
         "links": [
             {
                 "name": "YouTube Video",
@@ -989,7 +989,7 @@
         "name": "Locating Max Giesinger",
         "start-date": "2023",
         "parents": ["Programming"],
-        "description": "For my third ever serious YouTube video, I tried to find the birthplace of German Singer and Songwriter Max Giesinger. In one of the most famous German songs ever, he sings (this is the beginning of the song '80 Millionen' by him): 'Da wo ich herkomm wohnen eintausend Menschen. Im Ort daneben schon zweimal so viel. 300 Tausend in der nächsten Großstadt.'. This translates roughly to 'I come from a place with 1000 people. The town next to it has two times as many. 300 thousand in the next big city.'. And I thought that this would be enough to determine his birthplace without looking it up. So I did the calculation and figured out a spot and even biked there. However, it turns out he just lied. He confirmed this when I texted him about it on Instagram. What a shame. The video is of course in German.",
+        "description": "For my third ever serious YouTube video, I tried to find the birthplace of German Singer and Songwriter Max Giesinger. In one of the most famous German songs ever, he sings (this is the beginning of the song '80 Millionen' by him): 'Da wo ich herkomm wohnen eintausend Menschen. Im Ort daneben schon zweimal so viel. 300 Tausend in der nächsten Großstadt.' This translates roughly to 'I come from a place with 1000 people. The town next to it has two times as many. 300 thousand in the next big city.' And I thought that this would be enough to determine his birthplace without looking it up. So I did the calculation and figured out a spot and even biked there. However, it turns out he just lied. He confirmed this when I texted him about it on Instagram. What a shame. The video is of course in German.",
         "links": [
             {
                 "name": "YouTube Video",
@@ -1048,7 +1048,7 @@
                 "url": "https://www.youtube.com/watch?v=QuR_3Mar-nI"
             },
             {
-                "name": "Matt Parkers Video",
+                "name": "Matt Parker's Video",
                 "url": "https://www.youtube.com/watch?v=uc0OU1yJD-c"
             }
         ]
