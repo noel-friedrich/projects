@@ -1,0 +1,485 @@
+[
+    {
+        "name": "Projects",
+        "parents": [],
+        "description": "An (incomplete) list of past and present projects I've worked on. Some are big, some are small, some are done, some active, some in-between. I've organised them as a graph you can step through, feel free to explore and ask. Almost all projects contain some URL to click on.",
+        "last-update-date": "25.10.2026"
+    },
+    {
+        "name": "Programming",
+        "parents": ["Projects"],
+        "description": "All my projects that mostly consistent of programming. With AI coding, many of these projects could be completed much, much quicker than when I worked on them. I find that a little sad, but I also realise that all of these projects are already in the context of the time of creation and my current set of skills."
+    },
+    {
+        "name": "Terminal Website",
+        "start-date": "15.07.2022",
+        "parents": ["Programming"],
+        "description": "My terminal website, serving as my homepage. Over 200 commands, home to many more smaller projects. There's A LOT of fun games to play, secrets to find, simulations to run and tools to use.",
+        "links": [
+            {
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/terminal"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/noel-friedrich/terminal"
+            }
+        ]
+    },
+    {
+        "name": "Maths",
+        "start-date": "01.09.2019",
+        "parents": ["Projects"],
+        "description": "I started liking Mathematics as a fun thing to do in school and have since made many projects to communicate, teach, research and illustrate some maths. I studied/study Mathematics at Trinity College Dublin and ETH Zürich for my Bachelors."
+    },
+    {
+        "name": "Social Media Accounts",
+        "start-date": "unsure",
+        "parents": ["Projects"],
+        "description": "I have (public) accounts on various Social Media platforms.",
+        "links": [
+            {
+                "name": "Instagram",
+                "url": "https://instagram.com/noel.friedrich/"
+            },
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/noel-friedrich-20477a251/"
+            },
+            {
+                "name": "YouTube",
+                "url": "https://www.youtube.com/@noel.friedrich"
+            },
+            {
+                "name": "Miniwelt",
+                "url": "https://miniwelt.me/@noel/"
+            }
+        ]
+    },
+    {
+        "name": "YouTube",
+        "parents": ["Social Media Accounts"],
+        "start-date": "19.01.2019",
+        "description": "My YouTube channel where I sometimes make videos about things I want to talk about, which are often related to Maths and/or Programming.",
+        "links": [
+            {
+                "name": "YouTube Channel",
+                "url": "https://www.youtube.com/@noel.friedrich"
+            },
+            {
+                "name": "First Video",
+                "url": "https://www.youtube.com/watch?v=UZKGPJhzz3Y"
+            }
+        ]
+    },
+    {
+        "name": "Hackathons",
+        "parents": ["Programming"],
+        "start-date": "03.11.2023",
+        "description": "I like to participate at Hackathons. I have won once in Dublin at HackTrinity in 2023, which was also my very first Hackathon. I think Hackathons have suffered a lot from AI. I've mostly participated in Dublin, including at HackTrinity, HackIreland and HackEurope (the Trilogy (Trinity))."
+    },
+    {
+        "name": "Recreational Maths Zürich",
+        "parents": ["Maths"],
+        "start-date": "01.04.2025",
+        "description": "I started 'Recreational Maths Zürich' in the spring semester 2025. It's a club about promoting and supporting recreational maths projects for students in Zürich. Right now (October '26) it has over 300 members and has organised over 40 weekly meetups. I still run it as president, but wouldn't mind if someone else would like to take over.",
+        "links": [
+            {
+                "name": "Website",
+                "url": "https://recmaths.ch"
+            }
+        ]
+    },
+    {
+        "name": "Mathathon 2026",
+        "parents": ["Recreational Maths Zürich"],
+        "start-date": "01.12.2025",
+        "end-date": "17.05.2026",
+        "description": "Recmaths organised a competition where 100 students coded algorithms to play games against each other live overnight. There were hourly live tournaments on a big board, side events, catering and free drinks and many great moments. It went really well and it hopefully wasn't the last one (it was the second one we organised). It was hosted in collaboration with Mind:Phair (an association of VMP at ETH Zürich).",
+        "links": [
+            {
+                "name": "VMP Event Page",
+                "url": "https://vmp.ethz.ch/de/events/Mathathon-1/"
+            }
+        ]
+    },
+    {
+        "name": "Android Apps",
+        "parents": ["Programming"],
+        "start-date": "10.02.2023",
+        "description": "I've made some Android Apps over the years. Most of my Apps were hosted on the Google Play Store. Unfortunately, Google decided to close my developer account, removing all my apps (I paid for the account, grr!). I have since opened a new account (which costs money, again!) but am not planning on re-adding my old apps, mostly because they really weren't that great."
+    },
+    {
+        "name": "Perli",
+        "parents": ["Android Apps"],
+        "start-date": "04.08.2023",
+        "end-date": "01.01.2026",
+        "description": "Perli was an app to train your memory, based off the idea that you some saw bombs in a small grid (e.g. 5x5), then had to memorize these bomb positions and then had to draw a path from a random starting point to a random end point without touching any of the bombs (naturally, the bombs were hidden for this part of the game). The app contained a great music soundtrack and soundeffects made by my friend Mattis Strickert and many levels of variying difficulty. It even contained custom buyable grid-skins and a one-minute challenge mode. Looking back at it, it was a really fun app!",
+        "links": [
+            {
+                "name": "GitHub Page",
+                "url": "https://github.com/noel-friedrich/perli"
+            }
+        ]
+    },
+    {
+        "name": "Library of Léon",
+        "parents": ["Programming", "YouTube"],
+        "start-date": "10.10.2023",
+        "end-date": "01.01.2025",
+        "description": "I read Jorge Luis Borges short story on 'The Library of Babel' and wanted to recreate the Library in a cool 3d-way, while also extending it to contain all possible texts. Basically, it's a 3d library where each floor contains all possible texts ('books'). In the short story, these are all distributed randomly. There are a lot of weird things to realise about this concept. For example, there must be one book somewhere containing the answer to any question anyone has ever asked. In fact, even this very text is in the library (see the link below). I'm really proud of the resulting website and Maths behind it, there's a lot of fun things about it. I also made a YouTube video about it. Oh and I added a terrifying Horror Game to it. The website (the Library of Léon (lol)) is inspired by Jonathan Basile's great implementation of the Library of Babel as described in the short story.",
+        "links": [
+            {
+                "name": "GitHub Page",
+                "url": "https://github.com/noel-friedrich/lol"
+            },
+            {
+                "name": "YouTube Video",
+                "url": "https://www.youtube.com/watch?v=r8bN0VGOZ_Q"
+            },
+            {
+                "name": "Library of Léon",
+                "url": "https://noel-friedrich.de/lol/"
+            },
+            {
+                "name": "Full Short Story PDF",
+                "url": "https://sites.evergreen.edu/politicalshakespeares/wp-content/uploads/sites/226/2015/12/Borges-The-Library-of-Babel.pdf"
+            },
+            {
+                "name": "Jonathan Basile's Library of Babel",
+                "url": "https://libraryofbabel.info/"
+            },
+            {
+                "name": "This text in the Library",
+                "url": "https://www.noel-friedrich.de/lol/?b=8D4njwVI2xH9VaZq3Jamfd5eClHtPXziPGhKp4qV5jfKb2YcSM5fQWssAyG0ppfGBETa7rcnmrEi4SBcmDVDHPpvObqW1Ym525eS5Ffnb1pIa1beVb2PV299R2JGI1jcBaGYPr3rFwB9YlW4UU8EugOWCntPT0QrsgTWnzMwZgvvCTaJIiKuHgwPnFwXfwSHuyLo9lxo8P683sZdBzrOW9nlrVw6ygDszZOYPcSnf1O16CmI8TM3KCGLcgxbjOxBZmsXVbaoXl3tscKDVbuAsMtN2N2nCfYnGTHt7r2WUmSK8oqTBGcTurcF35nNQFPTDhuW4DzSKqUqQZEWlTcnhh6lfnnOhH411n2sAAcZNbc2n16kYQUtmzckJexe0WUs888V92sJNR9jW73tGBbWLHozxt8tYOYYO1Goa42wkpk3dJQdNSMxvY76lwDcf7PEBFVfNHfFvIvnITUbEtkhsIluDwXk3MNYrtXT2fZjDMeYXNJaLZ0NabZG9n6KZ47WnChMts7SGZUGyLwQI7CEfDhDkY20GCS1R4Tn11A4lWxKWRf3gbYz1NqsMGgHd31s1vN0XoC7x0CKlznFapyQHR0W4wlVGAaDO92h232fdMTBPMWelzMSKxKWl8XrokLx31XbCy0A28T8f28WzVi94AbPR5ncARScWWibLlSruMD6qGObx0npAD1aMIgAi1o3gz8LSyIL3xu-XQ"
+            }
+        ]
+    },
+    {
+        "name": "Paper Packing",
+        "parents": ["Maths", "YouTube"],
+        "start-date": "01.10.2025",
+        "description": "In October 2025, I realised that the Standard for A4 paper defines it in whole millimetres. I subsequently realised that the resulting error means that you can fit more sheets of A10 into one A0 than you 'should'. I proved exactly how many actually fit in (surprisingly difficult mathematical question, see research paper I presented at the FUN26 conference), made a YouTube video about it, got it featured on Matt Parker's YouTube channel and am still working on it some more. There's still some questions left unanswered that I would like to answer.",
+        "links": [
+            {
+                "name": "GitHub Page",
+                "url": "https://github.com/noel-friedrich/paper-packing"
+            },
+            {
+                "name": "Research Paper",
+                "url": "https://doi.org/10.4230/lipics.fun.2026.18"
+            },
+            {
+                "name": "YouTube Video",
+                "url": "https://www.youtube.com/watch?v=zDKBCIMkDbw"
+            },
+            {
+                "name": "Matt Parkers YouTube Video",
+                "url": "https://www.youtube.com/watch?v=XllQPr8FtPE"
+            },
+            {
+                "name": "Fun Orthogonal Rectangle Packing Website (FORP)",
+                "url": "https://www.noel-friedrich.de/forp/"
+            }
+        ]
+    },
+    {
+        "name": "AntiCookieBox",
+        "start-date": "23.07.2021",
+        "parents": ["Programming"],
+        "end-date": "01.01.2026",
+        "description": "A chrome plugin to remove popups asking for cookie approval. It was always a bit wonky, but nowadays it's even more wonky. It doesn't really work, but apparently some people liked it, given it had over 300 users. It was one of my first major programming projects. It got removed recently because of the Manifest V3 Update.",
+        "links": [
+            {
+                "name": "Chrome Web Store Site (Broken now)",
+                "url": "https://chromewebstore.google.com/detail/ljhngkhholmmlblkeocpjophaefbnccb"
+            },
+            {
+                "name": "GitHub Page",
+                "url": "https://github.com/noel-friedrich/antiCookieBox/"
+            }
+        ]
+    },
+    {
+        "name": "Stray",
+        "start-date": "23.11.2023",
+        "parents": ["Android Apps"],
+        "end-date": "01.01.2026",
+        "description": "A flutter app that let's you hunt virtual coins in the real world. Here is the (oh god how embarassing) text from the Google Play page (that's now gone): 'Embark on an exciting urban adventure with our innovative treasure hunt app! Discover the thrill of chasing goals as you explore your city like never before. With just a tap, generate a coin placed randomly between 1 to 5 kilometers away from your location. Armed only with a compass pointing you in a direction, set off on a captivating quest to find the hidden treasure.'.",
+        "links": [
+            {
+                "name": "GitHub Page",
+                "url": "https://github.com/noel-friedrich/stray"
+            }
+        ]
+    },
+    {
+        "name": "Partycolo",
+        "start-date": "unsure",
+        "parents": ["Programming"],
+        "description": "At the end of high school, I was frustrated with paid drinking game apps. So I made my own! It's very embarassing and the questions came from some random websites I found. I hope it still works.",
+        "links": [
+            {
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/partycolo/"
+            }
+        ]
+    },
+    {
+        "name": "HR-Codes (Hackathon Project)",
+        "start-date": "05.11.2023",
+        "end-date": "06.11.2023",
+        "parents": ["Hackathons"],
+        "description": "A new standard for QR Codes! These codes are not just computer-readable, but also human-readable (aren't all you may say now)! Isn't that awesome?! Me and my team made this overnight and won the Hackathon (HackTrinity 2023 at Trinity College Dublin).",
+        "links": [
+            {
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/hr-code/"
+            },
+            {
+                "name": "GitHub Page",
+                "url": "https://github.com/noel-friedrich/hr-code"
+            }
+        ]
+    },
+    {
+        "name": "3d Homepage",
+        "parents": ["Programming"],
+        "start-date": "unsure",
+        "description": "I decided that 3d websites would be the future and made a home-world that you can enter and interact with. It's not very big nor complex, but I still think it's kind of cool.",
+        "links": [
+            {
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/3d/"
+            }
+        ]
+    },
+    {
+        "name": "Turtlo",
+        "parents": ["Programming", "Terminal Website"],
+        "start-date": "unsure",
+        "description": "There's this fun command on the terminal website that spawns a turtle following your cursor (turtlo) and playing around. Because it's so awesome, I made a chrome plugin which spawns it on every site you visit. I turned it off on my machine because it's so annoying.",
+        "links": [
+            {
+                "name": "GitHub Page",
+                "url": "https://github.com/noel-friedrich/turtlo"
+            },
+            {
+                "name": "Chrome Web Store Entry (Add here!)",
+                "url": "https://chromewebstore.google.com/detail/turtlo/jdifijcompinjdlgfomdhdogaododkim"
+            }
+        ]
+    },
+    {
+        "name": "Covid in Coville",
+        "parents": ["Programming"],
+        "start-date": "01.01.2022",
+        "end-date": "01.08.2022",
+        "description": "Covid in Coville was a project done for German national science fair when I was in high school in 2022. I won the lower saxony regional and state competition in the 'Computer Science / Maths' category. I won some prizes on the national level, including a scholarship at a university of the German military and the Konrad-Zuse Youth-Prize for Computer Science given out by the Eduard-Rhein-Foundation. It was about simulating the spread of a city in an interactive web-app. The project materials are in German only.",
+        "links": [
+            {
+                "name": "GitHub Page",
+                "url": "https://github.com/noel-friedrich/coville"
+            },
+            {
+                "name": "Award page by the Eduard-Rhein-Foundation",
+                "url": "https://www.eduard-rhein-stiftung.de/konrad-zuse-jugendpreis-2021-fuer-informatik-computer-simuliert-pandemie/"
+            },
+            {
+                "name": "Simulation Website",
+                "url": "https://www.noel-friedrich.de/coville/"
+            },
+            {
+                "name": "Science Fair Website (Jugend Forscht)",
+                "url": "https://www.jugend-forscht.de/projektdatenbank/covid-in-coville.html"
+            },
+            {
+                "name": "Project Video",
+                "url": "https://www.youtube.com/watch?v=zCP_IsU5vSI"
+            },
+            {
+                "name": "Local News Article about it (Braunschweiger Zeitung)",
+                "url": "https://www.braunschweiger-zeitung.de/niedersachsen/peine/article401519447/landessieg-fuer-noel-friedrich-aus-peine.html"
+            }
+        ]
+    },
+    {
+        "name": "Compli",
+        "start-date": "05.02.2023",
+        "parents": ["Android Apps"],
+        "description": "My first Android App! It was a shitty app that shows the last time since you've given a compliment - thus making you want to give more compliments to people in your life! It doesn't work anymore, it was built with Android Studio.",
+        "links": [
+            {
+                "name": "GitHub Page",
+                "url": "https://github.com/noel-friedrich/compli"
+            }
+        ]
+    },
+    {
+        "name": "Projects Page",
+        "start-date": "25.10.2026",
+        "parents": ["Programming"]
+    },
+    {
+        "name": "Spion"
+    },
+    {
+        "name": "Selfmade Productivity Things"
+    },
+    {
+        "name": "Lettre"
+    },
+    {
+        "name": "Presi"
+    },
+    {
+        "name": "Todo"
+    },
+    {
+        "name": "Satisfying Clicks"
+    },
+    {
+        "name": "FeelBadTimer"
+    },
+    {
+        "name": "QR Code Projects"
+    },
+    {
+        "name": "HQR Codes"
+    },
+    {
+        "name": "QR Studio"
+    },
+    {
+        "name": "Draw on QR Codes"
+    },
+    {
+        "name": "Read QR by hand"
+    },
+    {
+        "name": "World-Cup Prediction"
+    },
+    {
+        "name": "@everyone"
+    },
+    {
+        "name": "Tabletop"
+    },
+    {
+        "name": "Dynamic Systems"
+    },
+    {
+        "name": "Zürich Tram Travelling Salesman"
+    },
+    {
+        "name": "Williampedia"
+    },
+    {
+        "name": "multi.golf"
+    },
+    {
+        "name": "TicTacToe Video"
+    },
+    {
+        "name": "Numcodes"
+    },
+    {
+        "name": "Airplane Game"
+    },
+    {
+        "name": "Norsecode"
+    },
+    {
+        "name": "Terml"
+    },
+    {
+        "name": "teleasy"
+    },
+    {
+        "name": "Miniwelt"
+    },
+    {
+        "name": "Mercator"
+    },
+    {
+        "name": "Blobber"
+    },
+    {
+        "name": "Bad Captchas"
+    },
+    {
+        "name": "Bad JS Chess Engine"
+    },
+    {
+        "name": "Convert"
+    },
+    {
+        "name": "Coville Game"
+    },
+    {
+        "name": "Draw"
+    },
+    {
+        "name": "Digital Escape Rooms"
+    },
+    {
+        "name": "Image Crop"
+    },
+    {
+        "name": "AI Name Generator"
+    },
+    {
+        "name": "Pangram Search"
+    },
+    {
+        "name": "Library of Papel"
+    },
+    {
+        "name": "Webcam Games"
+    },
+    {
+        "name": "Random Number Websites"
+    },
+    {
+        "name": "Real-Life Random Walk"
+    },
+    {
+        "name": "Struktogramm Editor"
+    },
+    {
+        "name": "Tenmin"
+    },
+    {
+        "name": "Walk to Trinity"
+    },
+    {
+        "name": "Wurzle"
+    },
+    {
+        "name": "Function Personality Test"
+    },
+    {
+        "name": "Searching Angela Merkel on Wikipedia"
+    },
+    {
+        "name": "Locating Max Giesinger"
+    },
+    {
+        "name": "Crowd-Counting Efforts"
+    },
+    {
+        "name": "Bitcoin Talk"
+    },
+    {
+        "name": "Opinions on the Metaverse"
+    },
+    {
+        "name": "MrBeast Progress Bar Rewarping"
+    },
+    {
+        "name": "Loneliest Point in Germany"
+    },
+    {
+        "name": "Chaotic Bad Apple"
+    }
+]
