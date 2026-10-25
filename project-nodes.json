@@ -6,6 +6,11 @@
         "last-update-date": "25.10.2026"
     },
     {
+        "name": "Social Projects",
+        "parents": ["Projects"],
+        "description": "Some projects related to bringing people together."
+    },
+    {
         "name": "Programming",
         "parents": ["Projects"],
         "description": "All my projects that mostly consistent of programming. With AI coding, many of these projects could be completed much, much quicker than when I worked on them. I find that a little sad, but I also realise that all of these projects are already in the context of the time of creation and my current set of skills."
@@ -80,7 +85,7 @@
     },
     {
         "name": "Recreational Maths Zürich",
-        "parents": ["Maths"],
+        "parents": ["Maths", "Social Projects"],
         "start-date": "01.04.2025",
         "description": "I started 'Recreational Maths Zürich' in the spring semester 2025. It's a club about promoting and supporting recreational maths projects for students in Zürich. Right now (October '26) it has over 300 members and has organised over 40 weekly meetups. I still run it as president, but wouldn't mind if someone else would like to take over.",
         "links": [
@@ -700,349 +705,379 @@
     },
     {
         "name": "Miniwelt",
-        "start-date": "unsure",
+        "start-date": "01.07.2026",
         "parents": ["Programming"],
-        "description": "",
+        "description": "A voxel game which let's you build and easily share 256x256x256 worlds. You can change the scale of the player with a push of the button, which means that things get crazy. It's a pretty complex and cool game made to be used across many devices. It even runs on your phone! It's hosted on Cloudflare and has accounts, moderation and a bunch of fun worlds. Unfortunately, it has no users (though I might make a YouTube video about it some day).",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://miniwelt.me"
             }
         ]
     },
     {
         "name": "Mercator",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "08.10.2026",
+        "parents": ["Programming", "Maths"],
+        "description": "A website visualization of how different cylindrical map projections work. There might be a video coming about this some day.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
-            }
-        ]
-    },
-    {
-        "name": "Blobber",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
-        "links": [
-            {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/mercator/"
             }
         ]
     },
     {
         "name": "Bad Captchas",
-        "start-date": "unsure",
+        "start-date": "< 2023",
         "parents": ["Programming"],
-        "description": "",
+        "description": "I wanted to make a YouTube videos about funny and stupid ideas of CAPTCHAs that I would implement for people to try and pass. I never actually made the video, but some ideas got implemented.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/captchas/"
             }
         ]
     },
     {
         "name": "Bad JS Chess Engine",
-        "start-date": "unsure",
+        "start-date": "< 2023",
         "parents": ["Programming"],
-        "description": "",
+        "description": "Not much to say about it. It's just a bad chess engine. I also made a version where you can play against your friends. Castling and En Passent are implemented incorrectly I believe. But you can still try to beat my engine, it's probably rated at about 1100 Elo.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Play the Engine Website",
+                "url": "https://www.noel-friedrich.de/chess/"
+            },
+            {
+                "name": "Online Variant Website",
+                "url": "https://www.noel-friedrich.de/chess/online/join/"
             }
         ]
     },
     {
         "name": "Convert",
-        "start-date": "unsure",
+        "start-date": "2020",
         "parents": ["Programming"],
-        "description": "",
+        "description": "This was probably my first real programming website project. It's a tool which let's you write a program in an abstract Scratch-like language and then lets you 'compile' that program into multiple programming languages. I think the idea was quite cool!",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/convert/"
             }
         ]
     },
     {
         "name": "Coville Game",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "01.08.2022",
+        "end-date": "01.01.2024",
+        "parents": ["Covid in Coville"],
+        "description": "This was an attempt to turn my Covid in Coville project into a game where you are in the seat of a local government and are supposed to try to mitigate an epidemic spreading through town. The game never got finished, but the concept and demo is quite cool.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Demo Website",
+                "url": "https://www.noel-friedrich.de/coville-game/"
             }
         ]
     },
     {
         "name": "Draw",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "< 2023",
+        "parents": ["Selfmade Productivity Things"],
+        "description": "A website that let's you draw on an infinitely extendable surface. Useful to doodle sometimes. Really, really simple.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/draw/"
             }
         ]
     },
     {
         "name": "Digital Escape Rooms",
-        "start-date": "unsure",
+        "start-date": "2020",
+        "end-date": "2023",
         "parents": ["Programming"],
-        "description": "",
+        "description": "During Covid, I came up with the great idea to create online Escape Rooms that teams can work in. This website contains some fun puzzles that people were supposed to solve together. I made some other digital escape rooms but lost the files unfortunately. They were played by my parents. Later, I joined a theatre play whose theme was being stuck in an escape room together. I like to think that this somehow inspired that play.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/escape/"
             }
         ]
     },
     {
         "name": "Image Crop",
-        "start-date": "unsure",
+        "start-date": "< 2023",
         "parents": ["Programming"],
-        "description": "",
+        "description": "A friend asked me to make a simple website where you can crop images to A4 and other weird aspect ratios, so I made it for him (at the time, I didn't know how scandalous A4 would be).",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/image-crop/"
             }
         ]
     },
     {
         "name": "AI Name Generator",
-        "start-date": "unsure",
+        "start-date": "< 2023",
         "parents": ["Programming"],
-        "description": "",
+        "description": "A friend of mine wanted to find a new name for themselves. I made this website that uses the power of 'AI' (a tiny neural net that doesn't work at all) to find you a name. You first rate a couple of names from 1 to 10. Then, you let a network I coded myself train on your ratings and then let the network rate all names in the database to find the one you enjoy most. Unfortunately, it doesn't work very well. But it is fun!",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/names/"
             }
         ]
     },
     {
         "name": "Pangram Search",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "01.10.2024",
+        "parents": ["Programming", "YouTube", "Maths"],
+        "description": "I tried finding a good german perfect pangram (a sentence containing every letter exactly once). I found a good candidate and made a fun YouTube video about it too. The video is in German. I also made a fun website which helps to find them. The German language makes it much easier than English, since you have additional vowels in the form of Umlaute (äöü), which help massively when constructing words and especially sensical sentences.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "YouTube Video",
+                "url": "https://www.youtube.com/watch?v=EFcvl_IG03k"
+            },
+            {
+                "name": "Pangrammar Website",
+                "url": "https://www.noel-friedrich.de/pangrammar/"
             }
         ]
     },
     {
         "name": "Library of Papel",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "01.12.2025",
+        "end-date": "01.04.2026",
+        "parents": ["Paper Packing", "Library of Léon"],
+        "description": "I decided to make a digital art gallery showing all the proof pictures from the paper packing project. If you want to understand what these mean, you should read the research paper. The library code is a copy of the Library of Leon project.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/papel/"
+            },
+            {
+                "name": "Research Paper",
+                "url": "https://doi.org/10.4230/lipics.fun.2026.18"
             }
         ]
     },
     {
         "name": "Webcam Games",
-        "start-date": "unsure",
+        "start-date": "< 2023",
         "parents": ["Programming"],
-        "description": "",
+        "description": "I always liked the idea of console like the Nintendo Wii or the XBOX Connect things where you could actually move in real life to interact with the games. So I made two games which let you interact with the real world through the webcam.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Webcam Quiz Game",
+                "url": "https://www.noel-friedrich.de/quiz/"
+            },
+            {
+                "name": "Webcam Circle Avoiding Game",
+                "url": "https://www.noel-friedrich.de/sport/"
             }
         ]
     },
     {
         "name": "Random Number Websites",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "<= 2023",
+        "parents": ["Programming", "Selfmade Productivity Things"],
+        "description": "My physics teacher in high school used to pick students at random to present the homework. So I made him a website which gives a random number. In fact I made two. Allegations rised that I somehow manipulated the results, but no one ever managed to prove anything.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "First Random Website",
+                "url": "https://www.noel-friedrich.de/random/"
+            },
+            {
+                "name": "Second Random Website",
+                "url": "https://www.noel-friedrich.de/random2/"
             }
         ]
     },
     {
         "name": "Real-Life Random Walk",
-        "start-date": "unsure",
+        "start-date": "01.02.2026",
+        "end-date": "01.08.2026",
         "parents": ["Programming"],
-        "description": "",
+        "description": "I decided to do a random walk in Zürich, by rolling a dice at every intersection and walking in that direction for 10 hours. I made a YouTube video about it and a lot of simulations. I think the video turned out great.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "YouTube Video",
+                "url": "https://www.youtube.com/watch?v=SyISa_joARY"
+            },
+            {
+                "name": "Randomwalk Simulation Website",
+                "url": "https://www.noel-friedrich.de/randomwalk/"
             }
         ]
     },
     {
         "name": "Struktogramm Editor",
-        "start-date": "unsure",
+        "start-date": "< 2022",
         "parents": ["Programming"],
-        "description": "",
+        "description": "A website to create Struktogramms, which are a type of pseudocode diagram used to describe code flow. The cool thing about the website is that you can even run the code, effectively interpreting the diagram as JS code.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/struktogramm/"
             }
         ]
     },
     {
         "name": "Tenmin",
-        "start-date": "unsure",
+        "start-date": "2025 or 2026",
         "parents": ["Programming"],
-        "description": "",
+        "description": "I thought it would be fun to test my sense of time by having to click a button every minute. It's fun to do regularly and see if you improve.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/tenmin/"
             }
         ]
     },
     {
         "name": "Walk to Trinity",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "01.01.2024",
+        "end-date": "01.06.2024",
+        "parents": ["Social Projects"],
+        "description": "Every weekday, me and a friend organised a walk to college from Trinity Halls to Trinity College in Dublin. The walk was approximately 5 kilometers and a few people showed up. We even had a leaderboard!",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Website",
+                "url": "https://www.noel-friedrich.de/walk-to-college/"
             }
         ]
     },
     {
         "name": "Wurzle",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "20.07.2025",
+        "parents": ["Recreational Maths Zürich"],
+        "description": "A daily game about finding a root of a hidden function. Description from the website: 'There is a secret function behind the scenes and you need to find a root (i.e. an x where f(x)=0). You can input x values and you will be shown corresponding outputs. If the response is (approximately) zero, you win! The fewer values you need, the better your score.'.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Game Website",
+                "url": "https://recmaths.ch/wurzle/"
             }
         ]
     },
     {
         "name": "Function Personality Test",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "08.11.2025",
+        "end-date": "08.12.2025",
+        "parents": ["Recreational Maths Zürich"],
+        "description": "A personality test that assigns you a mathematical function. For fun!",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Personality Test Website",
+                "url": "https://recmaths.ch/games/personality-test/"
             }
         ]
     },
     {
         "name": "Searching Angela Merkel on Wikipedia",
-        "start-date": "unsure",
+        "start-date": "2023",
         "parents": ["Programming"],
-        "description": "",
+        "description": "If you start at a random Wikipedia article in the German version of Wikipedia and want to go to Angela Merkels article with the fewest clicks possible by just clicking links within the article body, how long do you take on average if you play optimally? That unnecessarily long question sparked the idea for my second ever serious YouTube video! Unfortunately, it's in German. So I'll spoil: 2.887 (surprisingly low, right??). You should learn German and watch the video!",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "YouTube Video",
+                "url": "https://www.youtube.com/watch?v=cx7LAk3vf-o"
             }
         ]
     },
     {
         "name": "Locating Max Giesinger",
-        "start-date": "unsure",
+        "start-date": "2023",
         "parents": ["Programming"],
-        "description": "",
+        "description": "For my third ever serious YouTube video, I tried to find the birthplace of German Singer and Songwriter Max Giesinger. In one of the most famous German songs ever, he sings (this is the beginning of the song '80 Millionen' by him): 'Da wo ich herkomm wohnen eintausend Menschen. Im Ort daneben schon zweimal so viel. 300 Tausend in der nächsten Großstadt.'. This translates roughly to 'I come from a place with 1000 people. The town next to it has two times as many. 300 thousand in the next big city.'. And I thought that this would be enough to determine his birthplace without looking it up. So I did the calculation and figured out a spot and even biked there. However, it turns out he just lied. He confirmed this when I texted him about it on Instagram. What a shame. The video is of course in German.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "YouTube Video",
+                "url": "https://www.youtube.com/watch?v=8krKbrPVXVE"
             }
         ]
     },
     {
-        "name": "Crowd-Counting Efforts",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "name": "Crowd-Counting",
+        "start-date": "2024",
+        "parents": ["YouTube"],
+        "description": "I always asked myself how people count people at protests. In general, how does one measure how many people are in a given crowd? So I went to a few protests, counted myself and also counted with a scientist who has been doing that for the last few years. The video about it is in German.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "YouTube Video",
+                "url": "https://www.youtube.com/watch?v=FEcYHdni6B4"
             }
         ]
     },
     {
         "name": "Bitcoin Talk",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "11.10.2024",
+        "parents": ["YouTube", "Maths"],
+        "description": "I have a feature on my website that calculates friendship scores. While programming that, I accidentally programmed a bitcoin miner. If you want to know how that happened and learn something about crypto (I promise I'm not a crypto bro, it's just a good story) along the way, watch the talk I gave at ZUCCMAP at ETH Zürich in 2024!",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Talk Recording (YouTube)",
+                "url": "https://www.youtube.com/watch?v=XIoZLtrwcsc"
             }
         ]
     },
     {
         "name": "Opinions on the Metaverse",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "25.10.2025",
+        "parents": ["YouTube"],
+        "description": "When I was young, I played a lot of Minecraft. I think I grew up in a kind of Metaverse. And I think a lot of us did and I think some (especially older) people don't get the implications of this. So I made a video about it!",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "YouTube Video",
+                "url": "https://www.youtube.com/watch?v=9PtXIOXjFwc"
             }
         ]
     },
     {
         "name": "MrBeast Progress Bar Rewarping",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "2025",
+        "parents": ["Maths", "YouTube"],
+        "description": "Matt Parker made a great video about how MrBeast warped some progress bars in videos to progress non-linearly, probably to make people watch ads for longer. So I made videos where I warped the video in weird ways such that the progress bar moved linearly again. This project is the starting point of interactions with Matt Parker.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "Initial YouTube Video",
+                "url": "https://www.youtube.com/watch?v=HZE_pTRaqRA"
+            },
+            {
+                "name": "Follow-Up YouTube Video",
+                "url": "https://www.youtube.com/watch?v=QuR_3Mar-nI"
+            },
+            {
+                "name": "Matt Parkers Video",
+                "url": "https://www.youtube.com/watch?v=uc0OU1yJD-c"
             }
         ]
     },
     {
         "name": "Loneliest Point in Germany",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "2024",
+        "parents": ["Maths", "YouTube"],
+        "description": "What point in Germany is furthest from any house? In other words, how far from civilisation can you get? I calculated points, traveled to the furthest one and unfortunately found something there which made me very unhappy (you can probably guess what I found). I made a video about it, especially talking about Voronoi Diagrams, which are exactly the right tool for this job.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "YouTube Video"
+            },
+            {
+                "name": "Voronoi Diagram Interactive",
+                "url": "https://www.noel-friedrich.de/terminal/gui/voronoi/"
             }
         ]
     },
     {
         "name": "Chaotic Bad Apple",
-        "start-date": "unsure",
-        "parents": ["Programming"],
-        "description": "",
+        "start-date": "01.02.2026",
+        "end-date": "01.04.2026",
+        "parents": ["YouTube", "Maths"],
+        "description": "I found a way to encode images into the Baker Map, so I made Bad Apple but on the Baker's Map. In the video, I explain what the Baker Map is, how it works and how we can encode images.",
         "links": [
             {
-                "name": "GitHub Page",
-                "url": "https://github.com/noel-friedrich/placeholder"
+                "name": "YouTube Video",
+                "url": "https://www.youtube.com/watch?v=g6uCd3QMUrA"
             }
         ]
     }
