@@ -716,14 +716,14 @@
         ]
     },
     {
-        "name": "Mercator",
+        "name": "Map Projections",
         "start-date": "08.10.2026",
         "parents": ["Programming", "Maths"],
-        "description": "A website visualization of how different cylindrical map projections work. There might be a video coming about this some day.",
+        "description": "A website visualization of how different cylindrical map projections work. There might be a video coming about this some day. It shows constructions and their preserved properties in a visual and interactive way.",
         "links": [
             {
                 "name": "Website",
-                "url": "https://www.noel-friedrich.de/mercator/"
+                "url": "https://www.noel-friedrich.de/map-projections/"
             }
         ]
     },
