@@ -418,10 +418,10 @@
         "name": "FeelBadTimer",
         "start-date": "01.08.2025",
         "parents": ["Android Apps"],
-        "description": "An app that constantly shows a floating timer on your screen showing how much time you've spent on your phone already. It's supposed to make you feel bad, hence the name. It's not publicly released yet, but it should be released soon (Written in October 2026).",
+        "description": "An app that constantly shows a floating timer on your screen showing how much time you've spent on your phone already. It's supposed to make you feel bad, hence the name.",
         "links": [
             {
-                "name": "Play Store Page (might not be public yet)",
+                "name": "Play Store Page",
                 "url": "https://play.google.com/store/apps/details?id=de.noel_friedrich.feel_bad_timer"
             }
         ]
