@@ -4,6 +4,7 @@ import json
 import os
 import re
 import unicodedata
+from datetime import date, datetime
 from html import escape
 from pathlib import Path
 from string import Template
@@ -11,6 +12,20 @@ from urllib.parse import urlsplit
 
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def start_date(value):
+    """Approximate dates are sorting hints; their displayed text stays unchanged."""
+    if not value:
+        return None
+    match = re.fullmatch(r"\s*(?:(<=|<)\s*)?(\d{4})(?:\s+or\s+(\d{4}))?\s*", value)
+    if match:
+        operator, year, other_year = match.groups()
+        year = int(year)
+        if operator:
+            return date(year - (operator == "<"), 12, 31).toordinal()
+        return (date(year, 1, 1).toordinal() + date(int(other_year or year), 12, 31).toordinal()) / 2
+    return datetime.strptime(value.strip(), "%d.%m.%Y").date().toordinal()
 
 
 def slugify(name):
@@ -55,6 +70,15 @@ def build():
         return result
 
     descendant_counts = {name: len(descendants(name)) for name in children}
+    dates = {node["name"]: start_date(node.get("start-date")) for node in nodes}
+    sort_dates = {
+        name: dates[name] if dates[name] is not None else min(
+            (dates[child] for child in descendants(name) if dates[child] is not None), default=0
+        )
+        for name in children
+    }
+    for names in children.values():
+        names.sort(key=lambda name: (-sort_dates[name], name.casefold()))
 
     for node in nodes:
         page = pages[node["name"]]

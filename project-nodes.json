@@ -39,7 +39,7 @@
     },
     {
         "name": "Social Media Accounts",
-        "start-date": "unsure",
+        "start-date": "01.01.2015",
         "parents": ["Projects"],
         "description": "I have (public) accounts on various Social Media platforms.",
         "links": [
@@ -220,7 +220,7 @@
     },
     {
         "name": "Partycolo",
-        "start-date": "unsure",
+        "start-date": "01.01.2022",
         "parents": ["Programming"],
         "description": "At the end of high school, I was frustrated with paid drinking game apps. So I made my own! It's very embarrassing and the questions came from some random websites I found. Oh and it's in German.",
         "links": [
@@ -250,7 +250,7 @@
     {
         "name": "3d Homepage",
         "parents": ["Programming"],
-        "start-date": "unsure",
+        "start-date": "01.01.2023",
         "description": "I decided that 3d websites would be the future and made a home-world that you can enter and interact with. It's not very big nor complex, but I still think it's kind of cool.",
         "links": [
             {
@@ -262,7 +262,7 @@
     {
         "name": "Turtlo",
         "parents": ["Programming", "Terminal Website"],
-        "start-date": "unsure",
+        "start-date": "01.01.2022",
         "description": "There's this fun command on the terminal website that spawns a turtle following your cursor (turtlo) and playing around. Because it's so awesome, I made a chrome plugin which spawns it on every site you visit. I turned it off on my machine because it's so annoying.",
         "links": [
             {
@@ -534,7 +534,8 @@
     },
     {
         "name": "Tabletop",
-        "start-date": "unsure",
+        "start-date": "01.05.2026",
+        "end-date": "01.07.2026",
         "parents": ["Programming"],
         "description": "Have you ever wanted to play cards with friends but forgotten to bring the actual cards? No worries! This is the website for you. One person opens the website on their tv/computer; the others connect to it via WebRTC and they can interact and play any card game just by dragging the cards. It has a couple of useful features. I spent quite a while on this. It's a shame I've never used it. It's just worse than playing cards in real life. Perhaps this will be useful in the next epidemic.",
         "links": [
@@ -597,7 +598,7 @@
     },
     {
         "name": "multi.golf",
-        "start-date": "unsure",
+        "start-date": "23.02.2024",
         "parents": ["Programming", "YouTube"],
         "description": "An online minigolf game where courses are made up of many connected phone screens. This started as a Hackathon project in 2024 at HackTrinity in Dublin. I decided to rebuild and continue it at home, and it's still up and running. The domain name is quite cool (literally 'multi.golf'. Yes, '.golf' is a valid TLD). It was a LOT of work.",
         "links": [
@@ -641,7 +642,8 @@
     },
     {
         "name": "Airplane Game",
-        "start-date": "unsure",
+        "start-date": "01.08.2023",
+        "end-date": "13.08.2023",
         "parents": ["Programming"],
         "description": "I made a simple JS web game and shared the creation on YouTube for a younger audience. I was fresh out of high school and decided that day to make a YouTube video and upload it to the internet, showing my face. It was a decision I made long ago. In a way, this was the 'real' starting point of my YouTube channel. The material is in German. The game should still be playable even if you don't speak German.",
         "links": [

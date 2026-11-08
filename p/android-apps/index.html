@@ -150,10 +150,10 @@
             <button class="random-project" type="button" data-projects="[]" hidden>Random Project</button>
         </main>
         <nav class="children" aria-label="Children">
-            <ul><li><a href="..\perli/" style="view-transition-name: node-perli">Perli</a></li>
+            <ul><li><a href="..\feelbadtimer/" style="view-transition-name: node-feelbadtimer">FeelBadTimer</a></li>
 <li><a href="..\stray/" style="view-transition-name: node-stray">Stray</a></li>
-<li><a href="..\compli/" style="view-transition-name: node-compli">Compli</a></li>
-<li><a href="..\feelbadtimer/" style="view-transition-name: node-feelbadtimer">FeelBadTimer</a></li></ul>
+<li><a href="..\perli/" style="view-transition-name: node-perli">Perli</a></li>
+<li><a href="..\compli/" style="view-transition-name: node-compli">Compli</a></li></ul>
         </nav>
     </div>
     <script>
@@ -174,15 +174,13 @@
             });
         }
 
-        // Stable disorder: revisiting a page gives you the same arrangement.
+        // Keep horizontal positions stable while using the generated date order.
         function hash(text) {
             let value = 0;
             for (const character of text) value = (Math.imul(value, 31) + character.codePointAt(0)) | 0;
             return value >>> 0;
         }
-        const items = Array.from(children.children)
-            .sort((a, b) => hash(a.textContent) - hash(b.textContent));
-        children.append(...items);
+        const items = Array.from(children.children);
         // Evenly spaced horizontal positions, shuffled independently of list order.
         const mobilePositions = new Map([...items]
             .sort((a, b) => hash('position:' + a.textContent) - hash('position:' + b.textContent))
@@ -301,26 +299,23 @@
 
             const readingLeft = (scene.clientWidth - current.offsetWidth) / 2;
             const laneWidth = Math.max(nodeWidth, readingLeft - sideGap - padding);
-            const lanes = [[], []];
             items.forEach((item, index) => {
                 const seed = hash(item.textContent);
                 item.style.width = Math.min(nodeWidth, laneWidth) + 'px';
                 const inset = (seed % 101) / 100 * Math.max(0, laneWidth - item.offsetWidth);
                 item.style.left = (index % 2 === 0 ? padding + inset : scene.clientWidth - padding - laneWidth + inset) + 'px';
-                lanes[index % 2].push(item);
             });
-            const laneHeights = lanes.map(lane => lane.reduce((height, item) => height + Math.max(spacing, item.offsetHeight + 40), 0));
-            const height = Math.max(window.innerHeight - sceneTop, current.offsetHeight + parseFloat(current.style.marginTop) + 80, ...laneHeights.map(h => h + 100));
+            const step = item => Math.max(spacing / 2, item.offsetHeight + 20);
+            const totalHeight = items.reduce((height, item) => height + step(item), 0);
+            const height = Math.max(window.innerHeight - sceneTop, current.offsetHeight + parseFloat(current.style.marginTop) + 80, totalHeight + 100);
             scene.style.height = height + 'px';
 
-            lanes.forEach((lane, side) => {
-                let y = 30 + side * 35;
-                const extra = Math.max(0, height - laneHeights[side] - 120) / Math.max(1, lane.length);
-                lane.forEach(item => {
-                    const jitter = hash(item.textContent) % 25;
-                    item.style.top = y + jitter + extra / 2 + 'px';
-                    y += Math.max(spacing, item.offsetHeight + 40) + extra;
-                });
+            // One vertical sequence keeps the two sides in chronological order.
+            let y = 30;
+            const extra = Math.max(0, height - totalHeight - 100) / Math.max(1, items.length);
+            items.forEach(item => {
+                item.style.top = y + extra / 2 + 'px';
+                y += step(item) + extra;
             });
             drawLines();
         }
